@@ -24,10 +24,10 @@ def nucleotide_counter(s: str) -> list:
     return [s.count('A'), s.count('C'), s.count('G'), s.count('T')]
 
 @click.command()
-@click.option("-input", "-i", help="Input DNA string")
-def main(input: str) -> None:
+@click.option("-s", help="Input DNA string")
+def main(s: str) -> None:
     """Call functions in this program."""
-    print(nucleotide_counter(input)) #print to STDOUT
+    print(nucleotide_counter(s))
 
 
 if __name__ == "__main__":
