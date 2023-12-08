@@ -7,12 +7,13 @@ setup(
     url='https://github.com/JHarrisonEcoEvo/bioinf_tools',
     author='Joshua Harrison',
     license='WTFPL',
-    packages=find_packages(),
+    packages=find_packages(exclude="tests"),
     install_requires=['click',
                       'pytest-warnings',
                       'numpy',
                       'pandas'
                       ],
+    # Recall that the console scripts are the commands that can be called from the shell.
     entry_points={
         'console_scripts': [
             'count_nuc = seq_tools.nucleotide_counter:main',
