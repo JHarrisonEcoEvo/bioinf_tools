@@ -18,6 +18,7 @@ setup(
         'console_scripts': [
             'count_nuc = seq_tools.nucleotide_counter:main',
             'rev_comp = seq_tools.rev_complement:main',
+            'parquet_converter = io_tools.parquet_converter:main'
         ],
     },
 )
